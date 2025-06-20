@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: black;
+  color: white;
+  cursor: url('assets/img/cursor.webp'), auto;
+  overflow-x: hidden;
+}
+
+.selected{
+  background-color: rgba(255, 255, 255, 0.224);
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.maze-block {
+  background-color: rgba(209, 213, 219, 0.096);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.glow {
+  background-color: rgba(255, 0, 0, 0.2); 
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-popIn {
+  animation-name: popIn;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.feature-card {
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 0 30px 10px #f87171;
+  border-color: #f87171;
+}
+
+.sign{
+  background-image: url('./assets/img/bg3.png');
+}
+
+
+
+
+
+
