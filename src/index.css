@@ -66,6 +66,49 @@ body {
 }
 
 
+.call-btn {
+  position: relative;
+  padding: 0.6rem; /* reduced from 1rem */
+  background-color: #991b1b;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-btn .icon {
+  font-size: 1rem; /* reduced from 1.5rem */
+  z-index: 10;
+  position: relative;
+}
+
+.call-btn .glow-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.3), transparent);
+  border-radius: 9999px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.call-btn:hover {
+  background-color: #b91c1c;
+}
+
+.call-btn:hover .glow-circle {
+  opacity: 1;
+}
 
 
 
