@@ -32,5 +32,18 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.10",
     "vite": "^6.3.5"
-  }
+  },
+  "description": "<<<<<<< HEAD\r # React + Vite",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyuelc/Vortex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyuelc/Vortex/issues"
+  },
+  "homepage": "https://github.com/eyuelc/Vortex#readme"
 }

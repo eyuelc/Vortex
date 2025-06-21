@@ -1,9 +1,11 @@
 import Pcard from "./pcard";
+import { Link, useParams } from "react-router-dom";
 import { channels, users } from "../data";
 
 const currentUserId = "u002"; // Assuming this is the logged-in user
 
 export default function ClanList() {
+  const { id: selectedId } = useParams();  // get clan id from url params
   const user = users.find((u) => u.user_id === currentUserId);
 
   const userClans = user?.user_channel || [];
@@ -16,13 +18,18 @@ export default function ClanList() {
 
       const lastMsg = channel.channel_messages.at(-1)?.message_text || "No messages yet";
 
+      // check if this clan is selected
+      const isSelected = channel.channel_id === selectedId;
+
       return (
-        <Pcard
-          key={channel.channel_id}
-          pfp={channel.channel_pfp}
-          chName={channel.channel_name}
-          lastMsg={lastMsg}
-        />
+        <Link key={channel.channel_id} to={`/dashboard/clan/${channel.channel_id}`}>
+          <Pcard
+            pfp={channel.channel_pfp}
+            chName={channel.channel_name}
+            lastMsg={lastMsg}
+            selected={isSelected}  // pass selected prop
+          />
+        </Link>
       );
     });
 

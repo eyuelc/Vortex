@@ -17,7 +17,10 @@ function App() {
           <Route index element={<Navigate to="clan" replace />} />
 
           <Route path="clan" element={<ClanList />} />
+          <Route path="clan/:id" element={<ClanList />} />
           <Route path="dms" element={<DmList />} />
+          <Route path="dms/:id" element={<DmList />} />
+
         </Route>
       </Routes>
     </Router>
