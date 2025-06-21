@@ -60,7 +60,7 @@ export const users = [
 export const channels = [
   {
     "channel_id": "c001",
-    "channel_name": "general",
+    "channel_name": "Fortnite>>Angle",
     "channel_users": ["u001", "u002","u003"],
     "channel_messages": [
       {
@@ -85,11 +85,12 @@ export const channels = [
       }
     ],
     "channel_created_at": "2025-01-15T09:00:00Z",
-    "channel_description": "General discussion for all users"
+    "channel_description": "General discussion for all users",
+    "channel_pfp": "https://images.unsplash.com/photo-1607165697276-326e7955b6e0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsYW4lMjBwaWMlMjBjYXJ0b29uJTIwZ2FtaW5nfGVufDB8fDB8fHww"
   },
   {
     "channel_id": "c002",
-    "channel_name": "gaming",
+    "channel_name": "King Clan",
     "channel_users": ["u002", "u005"],
     "channel_messages": [
       {
@@ -114,11 +115,12 @@ export const channels = [
       }
     ],
     "channel_created_at": "2025-02-20T15:00:00Z",
-    "channel_description": "Discuss all things gaming"
+    "channel_description": "Discuss all things gaming",
+    "channel_pfp": "https://images.unsplash.com/photo-1702078564355-1122eb6303cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNsYW4lMjBwaWMlMjBjYXJ0b29uJTIwZ2FtaW5nfGVufDB8fDB8fHww"
   },
   {
     "channel_id": "c003",
-    "channel_name": "music",
+    "channel_name": "Flavor Clan",
     "channel_users": ["u004"],
     "channel_messages": [
       {
@@ -133,7 +135,78 @@ export const channels = [
       }
     ],
     "channel_created_at": "2025-03-01T10:30:00Z",
-    "channel_description": "For music lovers"
+    "channel_description": "For music lovers",
+    "channel_pfp": "https://images.unsplash.com/photo-1736166054893-85645d3d0a62?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNsYW4lMjBwaWMlMjBjYXJ0b29uJTIwZ2FtaW5nfGVufDB8fDB8fHww"
   }
 ];
+
+export const dms = [
+  {
+    dm_id: "dm001",
+    participants: ["u001", "u002"],
+    messages: [
+      {
+        message_id: "dm001-m1",
+        sender_id: "u001",
+        message_text: "Yo Sophia, are you joining the raid tonight?",
+        message_date: { date: "2025-06-19", time: "20:30:00" },
+        message_type: "text"
+      },
+      {
+        message_id: "dm001-m2",
+        sender_id: "u002",
+        message_text: "Yup! Just gearing up 🔥",
+        message_date: { date: "2025-06-19", time: "20:31:00" },
+        message_type: "text"
+      }
+    ]
+  },
+  {
+    dm_id: "dm002",
+    participants: ["u001", "u003"],
+    messages: [
+      {
+        message_id: "dm002-m1",
+        sender_id: "u003",
+        message_text: "Hey Ethan, what’s your build for the new character?",
+        message_date: { date: "2025-06-18", time: "19:15:00" },
+        message_type: "text"
+      }
+    ]
+  },
+  {
+    dm_id: "dm003",
+    participants: ["u002", "u005"],
+    messages: [
+      {
+        message_id: "dm003-m1",
+        sender_id: "u002",
+        message_text: "Noah! That last round was insane 😂",
+        message_date: { date: "2025-06-20", time: "14:00:00" },
+        message_type: "text"
+      },
+      {
+        message_id: "dm003-m2",
+        sender_id: "u005",
+        message_text: "We crushed it 🔥 GG!",
+        message_date: { date: "2025-06-20", time: "14:02:00" },
+        message_type: "text"
+      }
+    ]
+  },
+  {
+    dm_id: "dm004",
+    participants: ["u004", "u005"],
+    messages: [
+      {
+        message_id: "dm004-m1",
+        sender_id: "u004",
+        message_text: "Noah, I made a playlist for today’s session 🎵",
+        message_date: { date: "2025-06-19", time: "17:45:00" },
+        message_type: "text"
+      }
+    ]
+  }
+];
+
 
